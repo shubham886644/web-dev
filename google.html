@@ -1,34 +1,162 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="google.css">
-		<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-		<title>Google</title>
-	</head>
-	<body>
-		<header>
-			<a href="https://plus.google.com/u/0/up/follow">+Lara</a>
-			<a href="https://mail.google.com">Gmail</a>
-			<a href="https://www.google.com/imghp?hl=en&tab=wi&ei=Ox1NVMXuJYO3yATCjoFA&ved=0CAQQqi4oAg">Images</a>
-			<img id="products" src="products.png"/>
-			<img id="bell" src="bell.png"/>
-			<img id="share" src="share.png"/>
-			<img id="lara" class="headerpics" src="http://lh3.googleusercontent.com/-zkPWifjxy1M/AAAAAAAAAAI/AAAAAAAAAAA/7pAALFnncq4/s32-c/photo.jpg"/>
-		</header>
-		<div>
-			<img src="https://www.google.com/images/srpr/logo11w.png"/>
-			<form name="google" action="#" method="POST"><br>
-				<input type="search" class="search"><br>
-				<input type="submit" class="button" name="submit" value="Google Search">
-				<input type="submit" class="button" name="lucky" value="I'm Feeling Lucky">
-			</form>
-		</div>
-		<footer>
-			<a class="leftlinks" href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a>
-			<a class="leftlinks" href="https://www.google.com/services/?fg=1">Business</a>
-			<a class="leftlinks" href="https://www.google.com/intl/en/about/">About</a>
-			<a class="rightlinks" href="https://www.google.com/preferences?hl=en">Settings</a>
-			<a class="rightlinks" href="https://www.google.com/intl/en/policies/?fg=1">Privacy & Terms</a>
-		</footer>
-	</body>
-</html>
+<head>
+    <title>Google Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  
+  <body>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+#nav_bar {
+  float: right;
+}
+
+#nav_bar li {
+  display: inline-block;
+  padding: 8px;
+}
+
+#nav_bar #sign_in {
+  background: #4887ef; 
+  margin-right: 25px;
+  padding: 7px 15px;
+  border-radius: 3px; 
+  font-weight: bold;
+}
+
+.nav-links {
+  color: #404040;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li.nav-links a:hover {
+  text-decoration: underline;
+}
+
+#sign_in:hover { 
+  box-shadow: 1px 1px 5px #999;
+}
+
+#sign_in {
+  color: #fff;
+}
+.google #google_logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 112px;
+  padding-bottom: 20px;
+}
+
+.form {
+  text-align: center;
+  border-radius: 15px;
+}
+
+#form-search { 
+  width: 470px;
+  line-height: 32px;
+  padding: 20px 10px;
+  margin-top: 10px;
+  border-radius: 17px;
+  border: none;
+  border-color: #999;
+  border: solid;
+}
+
+.form #form-search {
+  padding: 0 8px;
+}
+
+
+.buttons {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 0px;
+}
+footer  {
+  background: #f2f2f2;
+  border-top: solid 2px #e4e4e4;
+  padding-bottom: 0;
+  margin-top: 445px;
+  width: 100%;
+  
+}
+
+footer ul li {
+  display: inline;
+  color: #666666;
+  font-size: 14px;
+  padding: 13px;
+}
+
+footer ul {
+  float: left;
+  padding: 1px;
+  padding-top: 0px;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  float: right;
+}
+
+
+
+
+    </style>
+    <header>
+      <nav>
+        <ul id="nav_bar">
+          <li class="nav-links" id="gmail"><a href="#">Gmail</a></li>
+          <li class="nav-links"><a href="#">Images</a></li>
+          <li id="sign_in"><a href="#">Sign In</a></li>
+        </ul>  
+      </nav>  
+    </header>  
+    <div class="google">
+      <a href="#" id="google_logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="no image"/></a>
+    </div>
+    <div class="form">  
+      <form>
+        <label for="form-search"></label>
+        <input type="text" id="form-search" placeholder="Search Google or type URL">
+      </form>
+    </div>  
+    <div class= "buttons">  
+      <input type="submit" value="Google Search" id="google_search">
+      <input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
+    </div>
+    <footer>
+        <ul class="footer-left">
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li> 
+        </ul>
+        <ul class="footer-right">    
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>       
+    </footer>      
+  </body>
